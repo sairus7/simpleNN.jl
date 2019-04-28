@@ -13,4 +13,4 @@ There are four versions of this code:
 There is a performance increase by an order (!) of magnitude due to transition to matrix operations in batches. 
 On my machine:
 * v1 and v2 take about 10 seconds per epoch
-* v2 and v3 take about 1.1 seconds per epoch
+* v3 and v4 take about 1.1 seconds per epoch
