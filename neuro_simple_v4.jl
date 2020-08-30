@@ -134,7 +134,8 @@ function SGDtrain(net::network_v4, trainer::batch_trainer, traindata, epochs, te
     train_x = traindata[1][:,idx]
     train_y = traindata[2][:,idx]
     test_x, test_y = testdata
-
+	
+	batch_size = trainer.batch_size
     # reorganize data in batches
     batch = [(train_x[:, k-batch_size+1 : k], train_y[:, k-batch_size+1 : k]) for k in batch_size:batch_size:n]
 
